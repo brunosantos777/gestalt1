@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>GESTALT</title>
+</head>
+<style >
+	@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+	
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	
+.links{
+	width: 100%;
+	height: 50px;
+	position: -ms-page;
+	display: flex;
+	
+}
+
+.links label{
+	padding: 10px ;
+	padding-top: 1%;
+	flex-grow: 1;
+	cursor: pointer;
+	transition: all .4s;
+	text-align: center;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 100%;
+	color: rgb(3, 3, 3);
+
+}
+.links label:hover{
+	color: white;
+	letter-spacing: 6px;
+	background-color: black;
+	
+}
+
+.scroll{
+	display: flex;
+	 width: 100vw; 
+	height: 100vh;
+	overflow: scroll; 
+}
+
+.sections{
+
+	transition:  all .4s;
+}
+
+input{
+	display: none;
+}
+.bloco{
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	
+}
+
+#nodejs{
+	background-color: #1f10ec96;
+}
+
+#bootstrap{
+	background-color: rgb(2, 67, 197);
+}
+#sass{
+	background-color: rgb(168, 157, 6);
+}
+#ruby{
+	background-color: rgba(2, 1, 1, 0.794);
+}
+
+
+#home{
+	background-color: #147cd6;
+}
+
+#rd_bootstrap:checked ~ .sections{
+	margin-top: -100vh;
+}
+#rd_sass:checked ~ .sections{
+	margin-top: -200vh;
+}
+
+#rd_ruby:checked ~ .sections{
+	margin-top: -300vh;
+}
+
+#rd_home:checked ~ .sections{
+	margin-top: -400vh;
+}
+
+
+
+/* .bloco {
+	width: 40%;
+	height: 100vh;
+	display: -ms-grid;
+    
+} */
+
+.text {
+	align-items: center;
+	text-align: center;
+	position: absolute;
+	padding-left: 10%;
+	padding-right: 10%;
+	color: rgb(255, 250, 250);
+	font-family:'Poppins' ;
+	font-size: 150%;
+	
+
+	
+}
+
+.text1{
+	align-items: center;
+	text-align: center;
+	position: absolute;
+	padding-left: 10%;
+	padding-right: 10%;
+	color: rgb(14, 11, 11);
+	font-family:'Poppins' ;
+	font-size: 150%;
+}
+
+.text1 a:hover{
+	color: rgb(244, 248, 0);
+	letter-spacing: 4px;
+	transition: 1s;
+}
+
+.text1 ul a{
+	color: rgb(255, 255, 255);
+}
+
+
+
+
+
+/* .text :hover{
+	letter-spacing: 2px;
+	font-family:'Poppins';
+	color: #000000;
+
+} */
+
+	
+
+
+	
+	
+
+/* 
+.letra1{
+	padding-top: 0%;
+    padding-bottom: 0%;
+	
+    color: rgb(202, 10, 10);
+    text-align: center, justify, bold;
+    position: sticky;
+    
+} */
+
+/* .letra1 :hover{
+    color: rgb(255, 251, 0);
+    letter-spacing: 2px;
+    transition: 0.3s;
+	
+} */
+
+/* .letra label:hover{
+	text-shadow: yellowgreen;
+	cursor: pointer;
+	
+	background-color: rgba(8, 3, 3, 0.986);
+	letter-spacing: 6px;
+} */
+
+.video {
+	position:relative;
+    top: 0;
+	padding-top: 0%;
+	
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+	/* filter: invert(1); */
+	
+    }
+
+	
+.video1 {
+	position:relative;
+    top: 0;
+	padding-top: 0%;
+	
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1.8;
+	filter: sepia(10);
+	
+    }
+	
+	
+
+</style>
+
+
+<body>
+
+	
+
+
+    <nav class="links">
+        <label for="rd_nodejs">HISTORIA</label>
+        <label for="rd_bootstrap">PISICOLOGIA</label>
+        <label for="rd_sass">PARTES</label>
+        <label for="rd_ruby">PHI</label>
+        <label for="rd_home">HOME</label>
+    </nav>
+    
+    
+    <div class="scroll">
+        
+        <input type="radio" name="grupo" id="rd_nodejs" checked="true">
+        <input type="radio" name="grupo" id="rd_bootstrap">
+        <input type="radio" name="grupo" id="rd_sass">
+        <input type="radio" name="grupo" id="rd_ruby">
+        <input type="radio" name="grupo" id="rd_home">
+		
+		
+        <section class="sections">
+			
+            <section class="bloco" id="nodejs"> 
+				<!-- <img src="img/pexels-fotografierende-2838506.jpg"> -->
+				<video src="idadereduzido.mp4"  class="video"  muted loop autoplay></video>
+				<div class="text">
+					<h2> GESTAL</h2>
+					<H1>vamos conhecer a fundo</H1>
+					<p>A gestalt (guès) (do alemão Gestalt, "forma"), também conhecida como gestaltismo (gues), teoria da forma, psicologia da gestalt, psicologia da boa forma e leis da gestalt, é uma doutrina que defende que, para se compreender as partes, é preciso, antes, compreender o todo.[1][2] Refere-se a um processo de dar forma, de configurar "o que é colocado diante dos olhos, exposto ao olhar". A palavra gestalt tem o significado "de uma entidade concreta, individual e característica, que existe como algo destacado e que tem uma forma ou configuração como um de seus atributos". </p>
+					
+			</div></section>
+            <section class="bloco" id="bootstrap">
+				<video src="velocidadereduzido.mp4"  class="video"  muted loop autoplay></video>
+				
+				<div class="text">
+					<h2> PISICOLOGIA</h2>
+					
+					<p>A gestalt, ou psicologia da forma, surgiu no início do século XX e, diferente da gestalt-terapia, criada pelo psicanalista berlinense Fritz Perls (1893-1970), trabalha com dois conceitos: super-soma e transponibilidade. O filósofo austríaco Cristian von Ehrenfels apresentou esses critérios pela primeira vez em 1890, na Universidade de Graz.
+						Um dos principais temas trazido por ela é tornar mais explícito o que está implícito, projetando na cena exterior aquilo que ocorre na cena interior, permitindo assim que todos tenham mais consciência da maneira como se comportam aqui e agora, na fronteira de contato com seu meio. Trata-se de seguir o processo em curso, observando atentamente os “fenômenos de superfície” e não mergulhando nas profundezas obscuras e hipotéticas do inconsciente – que só podem ser exploradas com a ajuda da iluminação artificial da interpretação.
+						
+						 </p>
+					
+			</div></section>
+            <section class="bloco" id="sass">
+				<video src="partes.mp4"  class="video"  muted loop autoplay></video><div class="text">
+				<h2> PARTES</h2>
+				
+				<p>
+					De acordo com a teoria gestáltica, não se pode ter conhecimento do "todo" por meio de suas partes, pois o todo é outro, que não a soma de suas partes: "(...) 'A+B' não é simplesmente '(A+B)', mas sim, um terceiro elemento 'C', que possui características próprias". Segundo o critério da transponibilidade, independentemente dos elementos que compõem determinado objeto, a forma é que sobressai: as letras r, o, s, a não constituem apenas uma palavra em nossas mentes: "(...) evocam a imagem da flor, seu cheiro e simbolismo - propriedades não exatamente relacionadas às letras." </p>
+				
+		</div></section>
+            <section class="bloco" id="ruby"><video src="phi fundo.mp4"  class="video"  muted loop autoplay></video><div class="text">
+				<h2> PHI</h2>
+				
+				<p>Um dos seus principais representantes foi Max Wertheimer (1880-1943). Wertheimer demonstrou que quando a representação de determinada frequência não é transposta se tem a impressão de continuidade e chamou o movimento percebido em sequência mais rápida de "fenômeno phi". A tentativa de visualização do movimento marca o início da escola mais conhecida da psicologia da gestalt e seus pioneiros, além de Wertheimer, foram Kurt Koffka (1886-1941); Kurt Lewin (1890-1947); e Wolfgang Köhler (1887-1967).
+ </p>
+ 		
+		</div>
+		</section>
+            <section class="bloco" id="ruby">
+				<video src="voltar apagina home.mp4"  class="video"  muted loop autoplay></video>
+				
+				<a href="index.html">
+				<div class="text1">
+					<ul>
+					<p>HOME</p>
+					<h2> PAGINA PRINCIPAL</h2></a>
+				</ul>	
+						
+			</div>
+	
+		
+				
+        </section>
+		
+    
+		<!-- <div class="text">
+			<h2>Tudo Sobre GESTAL</h2>
+			<H3>vamos conhecer a fundo</H3>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem distinctio obcaecati alias quasi harum. Culpa asperiores excepturi ullam officia nihil.</p>
+			
+    </div> -->
+
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GESTALT</title>
+</head>
+<body>
+    <section class="showcase">
+    <header>
+        <h2 class="logo">DESCUBRA</h2>
+        <div class="toggle"></div>
+    </header>
+    <video src="production ID_4441007.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+        <h2>Tudo Sobre GESTAL</h2>
+        <H3>vamos conhecer a fundo</H3>
+        <p>A experiência confirma que a Gestalt atinge, mais facilmente do que as abordagens de suporte essencialmente verbal, as camadas profundas arcaicas da personalidade - aliás, constituídas no período pré-verbal do desenvolvimento da pessoa.</p>
+        <a href="explore.html">Explore</a>
+
+    </div>
+    <ul class="social">
+        <li><a href="#"><img src="facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="instagram.png" alt=""></a></li>
+        <li><a href="#"><img src="twitter.png" alt=""></a></li>
+    </ul>
+</section>
+<div class="menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener ('click', () => {
+            menuToggle.classList.toggle ('active')
+            showcase.classList.toggle ('active')
+        })
+    </script>
+</body>
+</html>
